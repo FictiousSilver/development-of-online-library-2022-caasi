@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #D9D9D9;
+    background-attachment: fixed;
+}
+.s1{
+          
+    width: 1450px;
+    position: absolute;
+    left: 9%;
+    top: 5%;
+    background-color: #DAE2F2;
+    border-radius: 20px;
+	padding-right: 90px;
+	padding-left: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    contain: content;
+}
+.read{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    background-attachment: fixed;
+    display: block;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+button {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.back {
+    width: 8rem;
+    height: auto;
+   }
+   
+   button.back .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #292929;
+    border-radius: 1.625rem;
+   }
+   
+   button.back .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.back .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.back .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.back .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    color: transparent;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+   .buttons {
+    position: relative;
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    outline: none;
+    padding: 0;
+    width: 48px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+   #play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+    top: 30px;
+  }
+  
+  #play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+  }
+  
+  #pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+    top: 90px;
+    left: -40px;
+  }
+  
+  #pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+  }
+  
+  #stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+    top: 150px;
+    left: -100px;
+  }
+  
+  #stop.stopped {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+  }

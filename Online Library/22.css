@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+* {box-sizing:border-box}
+
+
+#menu{
+	opacity: 0;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+#nav{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.05), 
+			0 10px 10px rgba(0,0,0,0.02);
+	z-index: 2;
+	width: 100%;
+	margin-left: 0px;	
+	height: 80px;
+	transition: .5s;
+	position: absolute;
+	background-position: center;
+	background-color: #2E10F6;
+	
+}
+#img{
+	margin-top: 5px;
+	margin-left:30px;
+	width: 70px;
+	height: 70px;
+    position:absolute;
+}
+#logo{
+	margin-left: 20px;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    background-position: center;
+    position: absolute;
+    background-image: url("img/4.png"); 
+    opacity: 1;
+
+}
+#ds{
+	transition: 0s;
+	opacity: 0;
+	float: right;
+	margin-top: 35px;
+	height: 1.5px;
+	width: 20px;
+	background: black
+}
+#navs{
+	opacity: 1;
+	margin-top: 25px;
+	margin-right: 40px;
+	float: right;
+	list-style: none;
+	font-family: 'poppins';
+	
+	
+}
+#navs li{
+	
+	
+	display: inline-block;
+
+
+}
+#navs li a{
+	 padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+   
+    text-decoration: none;
+
+}
+#navs li a:hover{
+	 background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+    text-decoration: underline;
+    
+}
+#navs li.active a{
+	transform: translateY(-1px);
+    text-decoration: underline;
+}
+.section1{
+	position: relative;
+	height: 1125px; 
+	width: 100%;
+	z-index: 1;
+	background-image: url("img/10.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'poppins';
+}
+.banner{
+	background: #161616;
+	width: 700px;
+	height: 47px;
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 200px;
+
+}
+.banner h1{
+	text-align: center;
+	color: #dadada;
+	letter-spacing: 5px;
+}
+.banner h3{
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+.section2{
+	height: 110vh; 
+	width: 100%;
+	background-color: #1a1a1a;
+	font-family: 'Dancing Script', cursive; 
+}
+.p1{
+	background-image: url("images/gh.jpg");
+	float: left;
+	margin-left: 350px;
+	margin-top: 100px;
+	position: absolute;
+	height: 450px;
+	width: 350px;
+}
+.section2 h4{
+	position: absolute;
+	color: #dadada;
+	font-size: 20px;
+	}
+.section2 p{
+	position: absolute;
+	color: #dadada;
+	font-size: 20px;
+	
+}
+.a1 {
+	margin-left: 850px;
+	margin-top: 260px;
+}
+.q1{
+	margin-left: 850px;
+	margin-top: 200px;
+}
+.p2{
+	background-image: url("images/rt.jpg");
+	float: left;
+	margin-left: 1050px;
+	margin-top: 520px;
+	position: absolute;
+	height: 400px;
+	width: 350px;
+}
+.a2 {
+	margin-left: 500px;
+	margin-top: 750px;
+}
+.q2{
+	margin-left: 500px;
+	margin-top: 660px;
+}
+.section3{
+	height: 100vh; 
+	width: 100%;
+	background-color: gray;
+	font-family: 'Dancing Script', cursive; 
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
