@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>Library Portal: Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="books.css">
+    
+</head>
+<main>
+		
+    <div id="banner">
+                        <div id="ex1"></div>
+                        <div id="info">
+                            
+                            <h3>Written by Scribd Editors</h3>
+
+                            <h6>From the founder of Rich Global LLC and the Rich Dad Company, Robert Kiyosaki,<br> comes this tell-all self-help book about wealth, retirement, and financial philosophy.<br>
+
+                            <br>Taking to heart the message that the poor and middle class work for money but that<br> the rich have money work for them, Kiyosaki lays out his philosophy on income-<br>generating assets always providing healthier bottom-line results.<br>
+
+                            <br>In this abridged edition of his renowned self-help book, Kiyosaki details the principles<br> of how to get out of the rat-race of living paycheck to paycheck. His methods are tried<br>-and-true and have helped create more than a few millionaires — by focusing on<br> changing how the readers think and encouraging spending that lets money work for<br> you, Kiyosaki has created a landmark book that challenges conventional middle class<br> thoughts surrounding hard work and saving money.<br>
+
+                            <br>As Kiyosaki asserts, “You're either a master of money or a slave to it.” With this book,<br> learn to think like a rich dad and let your money work for you.<br><br></h6>
+
+                            <h5>Publisher: Robert T. Kiyosaki</h5>
+                            <h5>Author: Robert T. Kiyosaki</h5>
+                            <h5>Released Date: Apr 25, 2011</h5>
+                            <form action="">
+                            <button>Save</button>
+                            <button>Borrow</button>
+                            </form>
+                            
+
+                        </div>
+                    </div>
+    <div id="banner1">
+                        <div id="ex2"></div>
+                        <div id="info1">
+                            
+                            <h3>Written by Stephen King</h3>
+
+                            <h6>The son of a struggling single mother,<br> Jamie Conklin just wants an ordinary childhood. But Jamie is no ordinary child.<br>
+
+                            <br>Born with an unnatural ability his mom urges him to keep secret,<br>Jamie can see what no one else can see and learn what no one else can learn.<br>But the cost of using this ability is higher than Jamie can imagine-as he<br>discovers when an NYPD detective draws him into the pursuit of a killer<br>who has threatened to strike from beyond the grave.<br>
+
+                            <br>Later is Stephen King at his finest, a terrifying and touching story of<br>innocence lost and the trials that test our sense of right and wrong.<br>With echoes of King's classic novel, It, Later is a powerful,<br>haunting, unforgettable exploration of what it takes to stand up to evil in all the faces it wears.<br><br></h6>
+
+                            <h5>Publisher: Simon & Schuster Audio</h5>
+                            <h5>Author: Stephen King</h5>
+                            <h5>Released Date: Mar 2, 2021</h5>
+                            <form action="">
+                            <button>Save</button>
+                            <button>Borrow</button>
+                            </form>
+                            
+
+                        </div>
+                    </div>
+</main>
+<script>
+	
+    const sec1 = document.getElementById('sec1');
+    
+
+        pic1.addEventListener('click', () => {
+        $("main").addClass("container");
+
+        pic1.style.transition ="0.5s";
+        pic1.style.opacity=".5";
+        
+        banner.style.opacity="1";
+        banner.style.marginLeft="45px";
+        banner.style.transition="0.5s";
+        });
+        ex1.addEventListener('click', () => {
+        $("main").removeClass("container");
+
+        pic1.style.opacity="1";
+
+        pic1.style.background ="url(images/richdad.jpg)";
+        pic1.style.backgroundSize ="100%";
+        pic1.style.transition ="0.5s";
+
+        banner.style.opacity="0";
+        banner.style.marginLeft="-2000px";
+        });
+</script>
+<script>
+
+        pic2.addEventListener('click', () => {
+        $("main").addClass("container");
+
+
+        pic2.style.transition ="0.5s";
+        pic2.style.opacity=".5";
+        
+        banner1.style.opacity="1";
+        banner1.style.marginLeft="45px";
+        banner1.style.transition="0.5s";
+
+        });
+        ex2.addEventListener('click', () => {
+        $("main").removeClass("container");
+            
+        pic2.style.opacity="1";
+
+        pic2.style.background ="url(images/later.jpg)";
+        pic2.style.backgroundSize ="100%";
+        pic2.style.transition ="0.5s";
+
+        banner1.style.opacity="0";
+        banner1.style.marginLeft="-2000px";
+        
+        });
+</script>
+</html>

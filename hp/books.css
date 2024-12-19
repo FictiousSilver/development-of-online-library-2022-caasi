@@ -1,0 +1,29 @@
+#ex1{
+	transition: .5s;
+	cursor: pointer;
+	margin-top: 100px;
+	margin-left: 200px;
+	z-index: 5;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+#info h3{
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+#info button{
+	margin-left: 120px;
+	margin-top: 40px;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 1px solid #f9f9f9;
+	background-color: transparent;
+	color: #c9c9c9;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100px;
+	height: 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	}
